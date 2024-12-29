@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #09090b;
+  --primary-color: #84cc16;
+  --card-color: #18181b;
+  --button-color: #27272a;
+  --forground-color: #fafafa;
+  --paragraph-color: #71717a;
+}
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  font-family: sans-serif;
+  color: var(--forground-color);
+  background-color: var(--background-color);
+}
+
+main {
+  width: 100%;
+  max-width: 400px;
+  background-color: var(--card-color);
+  margin: auto;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.profile-info {
+  position: relative;
+}
+
+.profile-image {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 24px;
+}
+
+.profile-info h1 {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.profile-info h2 {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 36px;
+}
+
+.profile-info p {
+  text-align: center;
+  font-style: italic;
+  color: var(--paragraph-color);
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.profile-links {
+  list-style: none;
+}
+
+.profile-links li:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.profile-links li a {
+  display: inline-block;
+  width: 100%;
+  background-color: var(--button-color);
+  color: var(--forground-color);
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 14px;
+}
+.profile-links li a:hover {
+  background-color: var(--forground-color);
+  color: var(--button-color);
+  transition: 100ms all ease-in-out;
+}
